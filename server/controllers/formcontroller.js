@@ -67,7 +67,7 @@ const signup = async (req,res)=>{
                 let usn = alluseremail.name
                     let decryptpass = await bycrypt.compare(password,usp)
                         if (decryptpass) {
-                          currentuser = {name,email}
+                          currentuser = {usn,email}
                                res.json({
                                     usn,
                                     email,
